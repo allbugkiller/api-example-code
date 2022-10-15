@@ -38,3 +38,8 @@ public class examples {
                 " and severe hypokalemia. She thinks her potassium might again be low.";
 
         JSONObject data= new JSONObject();
+        data.put("text", text);
+        HttpResponse<JsonNode> response = Unirest.post(url)
+                .header("authorization", API_KEY)
+                .header("accept", "application/json")
+                .header("Content-Type", "application/json")
