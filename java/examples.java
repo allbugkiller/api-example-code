@@ -30,3 +30,11 @@ public class examples {
 
     /*
     Entity extraction from a note sample.
+    */
+    private static void exampleEntityExtraction() throws UnirestException {
+        String url = "https://api.lexigram.io/v1/extract/entities";
+        String text = "The patient was given some hydrocodone for control of her pain."+
+                "The patient suffers from bulimia and eating disorder, bipolar disorder,"+
+                " and severe hypokalemia. She thinks her potassium might again be low.";
+
+        JSONObject data= new JSONObject();
