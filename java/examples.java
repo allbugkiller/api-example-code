@@ -21,3 +21,12 @@ public class examples {
 
     public static void main(String[] args) throws UnirestException {
         exampleEntityExtraction();
+        exampleHighlightEntities();
+        exampleSearchConcepts();
+        exampleConcept();
+        exampleConceptAncestors();
+        exampleConceptDescendants();
+    }
+
+    /*
+    Entity extraction from a note sample.
