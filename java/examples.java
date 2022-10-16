@@ -43,3 +43,10 @@ public class examples {
                 .header("authorization", API_KEY)
                 .header("accept", "application/json")
                 .header("Content-Type", "application/json")
+                .body(data)
+                .asJson();
+        JSONObject body = new JSONObject(response.getBody());
+        JSONArray result = body.getJSONArray("array").getJSONObject(0).getJSONArray("matches");
+
+        /*
+        prints the extracted concepts
