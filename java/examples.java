@@ -50,3 +50,11 @@ public class examples {
 
         /*
         prints the extracted concepts
+        */
+        for(int i = 0; i < result.length(); i++) {
+            JSONObject item = result.getJSONObject(i);
+            String types = item.getJSONArray("types").toString() + " ";
+            String context = item.getJSONArray("contexts").toString() + " ";
+
+            System.out.println("Concept ID: "+ item.getString("id") +
+                    "Concept label: "+ item.getString("label") +
