@@ -70,3 +70,16 @@ public class examples {
                                "Concept label: "+ item.getString("label") +
                                " types:"+ types +
                                " context: "+ context);
+        }
+    }
+
+    /*
+    Entity highlight from a note sample.
+    */
+    private static void exampleHighlightEntities() throws UnirestException {
+        String text = "The patient was given some hydrocodone for control of her pain."+
+                "The patient suffers from bulimia and eating disorder, bipolar disorder,"+
+                " and severe hypokalemia. She thinks her potassium might again be low.";
+        JSONObject data= new JSONObject();
+        data.put("text", text);
+        String url = "https://api.lexigram.io/v1/highlight/entities";
