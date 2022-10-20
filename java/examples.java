@@ -83,3 +83,12 @@ public class examples {
         JSONObject data= new JSONObject();
         data.put("text", text);
         String url = "https://api.lexigram.io/v1/highlight/entities";
+
+
+        HttpResponse<JsonNode> response = Unirest.post(url)
+                .header("authorization", API_KEY)
+                .header("accept", "application/json")
+                .header("Content-Type", "application/json")
+                .body(data)
+                .asJson();
+        JSONObject body = new JSONObject(response.getBody());
