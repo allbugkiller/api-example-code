@@ -92,3 +92,14 @@ public class examples {
                 .body(data)
                 .asJson();
         JSONObject body = new JSONObject(response.getBody());
+
+        /*
+        Returns the html formatted text from the note sample
+        */
+        System.out.println("Highlighted Option" + body);
+    }
+
+    /*
+    Keyword search of "diabetes"
+    */
+    private static void exampleSearchConcepts() throws UnirestException {
