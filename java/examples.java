@@ -103,3 +103,10 @@ public class examples {
     Keyword search of "diabetes"
     */
     private static void exampleSearchConcepts() throws UnirestException {
+        String keyword = "diabetes";
+        String url = "https://api.lexigram.io/v1/lexigraph/search?q="+ keyword;
+        HttpResponse<JsonNode> response = Unirest.get(url)
+                .header("authorization", API_KEY)
+                .asJson();
+        JSONObject body = new JSONObject(response.getBody());
+        JSONArray result = body.getJSONArray("array").getJSONObject(0).getJSONArray("conceptSearchHits");
