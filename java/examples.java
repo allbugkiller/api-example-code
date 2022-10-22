@@ -110,3 +110,7 @@ public class examples {
                 .asJson();
         JSONObject body = new JSONObject(response.getBody());
         JSONArray result = body.getJSONArray("array").getJSONObject(0).getJSONArray("conceptSearchHits");
+
+        /*
+        prints concepts found from the search of diabetes
+        */
