@@ -124,3 +124,15 @@ public class examples {
                                " types:"+ types);
         }
     }
+
+    /*
+    Concept IDs are returned by API calls like search and data extraction
+    and the 'concepts' endpoint allows you to get more information about
+    that particular concept.
+    */
+    private static void exampleConcept() throws UnirestException {
+        String conceptGraphId = "lxg:49711bf9b46f"; /* concept Id for heart failure*/
+        String url ="https://api.lexigram.io/v1/lexigraph/concepts/"+ conceptGraphId;
+        HttpResponse<JsonNode> response = Unirest.get(url)
+                .header("authorization", API_KEY)
+                .asJson();
