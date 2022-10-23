@@ -118,3 +118,9 @@ public class examples {
             JSONObject item = result.getJSONObject(i);
             JSONObject concept = item.getJSONObject("concept");
             String types = concept.getJSONArray("types").toString() + " ";
+
+            System.out.println("Concept ID: "+ concept.getString("id") +
+                               "Concept label: "+ concept.getString("label") +
+                               " types:"+ types);
+        }
+    }
