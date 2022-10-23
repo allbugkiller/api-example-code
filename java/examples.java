@@ -114,3 +114,7 @@ public class examples {
         /*
         prints concepts found from the search of diabetes
         */
+        for(int i = 0; i < result.length(); i++) {
+            JSONObject item = result.getJSONObject(i);
+            JSONObject concept = item.getJSONObject("concept");
+            String types = concept.getJSONArray("types").toString() + " ";
