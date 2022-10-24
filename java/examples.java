@@ -149,3 +149,9 @@ public class examples {
                     " types:"+ types);
 
     }
+
+    /*
+    Ancestors of heart failure concept are returned
+    */
+    private static void exampleConceptAncestors() throws UnirestException {
+        String conceptGraphId = "lxg:49711bf9b46f"; /* concept Id for heart failure*/
