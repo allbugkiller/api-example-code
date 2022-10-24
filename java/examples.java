@@ -155,3 +155,7 @@ public class examples {
     */
     private static void exampleConceptAncestors() throws UnirestException {
         String conceptGraphId = "lxg:49711bf9b46f"; /* concept Id for heart failure*/
+        String url ="https://api.lexigram.io/v1/lexigraph/concepts/"+ conceptGraphId+ "/ancestors";
+
+        HttpResponse<JsonNode> response = Unirest.get(url)
+                .header("authorization", API_KEY)
