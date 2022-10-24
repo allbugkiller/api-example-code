@@ -140,3 +140,12 @@ public class examples {
         JSONObject result = body.getJSONArray("array").getJSONObject(0);
         String types = result.getJSONArray("types").toString() + " ";
 
+
+        /*
+        prints the heart failure concept
+        */
+        System.out.println("Concept ID: "+ result.getString("id") +
+                    "Concept label: "+ result.getString("label") +
+                    " types:"+ types);
+
+    }
