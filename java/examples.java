@@ -188,3 +188,10 @@ public class examples {
         HttpResponse<JsonNode> response = Unirest.get(url)
                 .header("authorization", API_KEY)
                 .asJson();
+
+        JSONObject body = new JSONObject(response.getBody());
+        JSONArray result = body.getJSONArray("array").getJSONObject(0).getJSONArray("results");
+
+        /*
+        prints descendant concepts.
+        */
