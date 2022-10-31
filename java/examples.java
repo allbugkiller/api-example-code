@@ -173,3 +173,7 @@ public class examples {
 
             System.out.println("Concept ID: "+ item.getString("id") +
                     "Concept label: "+ item.getString("label") +
+                    " types:"+ types );
+        }
+
+    }
