@@ -177,3 +177,14 @@ public class examples {
         }
 
     }
+
+    /*
+    Descendants of heart failure concept are returned
+    */
+    private static void exampleConceptDescendants() throws UnirestException {
+        String conceptGraphId = "lxg:49711bf9b46f"; /* concept Id for heart failure*/
+        String url = "https://api.lexigram.io/v1/lexigraph/concepts/"+conceptGraphId+"/descendants";
+
+        HttpResponse<JsonNode> response = Unirest.get(url)
+                .header("authorization", API_KEY)
+                .asJson();
