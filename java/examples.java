@@ -203,3 +203,5 @@ public class examples {
                     "Concept label: "+ item.getString("label") +
                     " types:"+ types );
         }
+    }
+}
