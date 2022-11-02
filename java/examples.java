@@ -195,3 +195,11 @@ public class examples {
         /*
         prints descendant concepts.
         */
+        for(int i = 0; i < result.length(); i++){
+            JSONObject item = result.getJSONObject(i);
+            String types = item.getJSONArray("types").toString() + " ";
+
+            System.out.println("Concept ID: "+ item.getString("id") +
+                    "Concept label: "+ item.getString("label") +
+                    " types:"+ types );
+        }
