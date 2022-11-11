@@ -15,3 +15,12 @@ var apiKey = "Bearer " + " COPY YOUR KEY HERE ";
 /*
  Entity extraction from a note sample.
 */
+function exampleEntityExtraction(){
+  var text = "The patient was given some hydrocodone for control of her pain."+
+           "The patient suffers from bulimia and eating disorder, bipolar disorder,"+
+           " and severe hypokalemia. She thinks her potassium might again be low.";
+  var data = { text: text };    
+  var url = "https://api.lexigram.io/v1/extract/entities";
+
+  var httpRequest = new XMLHttpRequest();
+  httpRequest.open("POST", url, true);
