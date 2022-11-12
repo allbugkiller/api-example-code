@@ -40,3 +40,10 @@ function exampleEntityExtraction(){
                   " types:", response.matches[i].types + 
                   " context: ", response.matches[i].contexts);
     }
+    
+  };
+  httpRequest.send(JSON.stringify(data));    
+}
+
+
+/*
