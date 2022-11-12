@@ -31,3 +31,12 @@ function exampleEntityExtraction(){
       return;
     }
     var response = JSON.parse(httpRequest.responseText);
+    
+    /* For loop that inspects the response printing to console the extracted concepts.
+       It prints the Lexigraph concept ID, the type of concepts extracted (problem, drug, etc)
+       and the context (negation, speculation, ...) */
+    for(var i = 0; i < response.matches.length; i++){
+      console.log("Concept ID: ", response.matches[i].label + 
+                  " types:", response.matches[i].types + 
+                  " context: ", response.matches[i].contexts);
+    }
