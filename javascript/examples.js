@@ -47,3 +47,16 @@ function exampleEntityExtraction(){
 
 
 /*
+ Entity highlight from a note sample.
+*/
+function exampleHighlightEntities(){
+  var text = "The patient was given some hydrocodone for control of her pain."+
+             "The patient suffers from bulimia and eating disorder, bipolar disorder,"+
+             " and severe hypokalemia. She thinks her potassium might again be low.";
+  var data = {text: text};    
+  var url = ="https://api.lexigram.io/v1/highlight/entities";
+
+  var httpRequest = new XMLHttpRequest();
+  httpRequest.open("POST", url, true);
+  httpRequest.setRequestHeader("Content-Type", "application/json");
+  httpRequest.setRequestHeader("Authorization", apiKey);
