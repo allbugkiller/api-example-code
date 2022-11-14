@@ -72,3 +72,18 @@ function exampleHighlightEntities(){
   httpRequest.send(JSON.stringify(data.text));    
 }
 
+
+/*
+Keyword search of keyword diabetes
+*/
+function exampleSearchConcepts(){
+  var keyword = "diabetes";
+  var url = "https://api.lexigram.io/v1/lexigraph/search?q="+ keyword;
+  var httpRequest = new XMLHttpRequest();
+  httpRequest.open("GET", url, true);
+  httpRequest.setRequestHeader("authorization", apiKey);
+
+  httpRequest.onreadystatechange = function() {
+    if (httpRequest.readyState != 4 || httpRequest.status != 200) {
+      return;
+    }
