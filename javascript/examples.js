@@ -60,3 +60,15 @@ function exampleHighlightEntities(){
   httpRequest.open("POST", url, true);
   httpRequest.setRequestHeader("Content-Type", "application/json");
   httpRequest.setRequestHeader("Authorization", apiKey);
+  httpRequest.onreadystatechange = function() {
+    if (httpRequest.readyState != 4 || httpRequest.status != 200) {
+      return;
+    }
+    var response = JSON.parse(httpRequest.responseText);
+    
+    /* Returns the html formated text from a note sample */
+    console.log("The Response with html format", response);
+  };
+  httpRequest.send(JSON.stringify(data.text));    
+}
+
