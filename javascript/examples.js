@@ -98,3 +98,8 @@ function exampleSearchConcepts(){
                   
     }
   };
+  httpRequest.send();    
+};
+
+/*
+  Concept IDs are returned by API calls like search and data extraction
