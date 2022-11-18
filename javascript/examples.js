@@ -103,3 +103,12 @@ function exampleSearchConcepts(){
 
 /*
   Concept IDs are returned by API calls like search and data extraction
+  and the 'concepts' endpoint allows you to get more information about 
+  that particular concept.
+*/
+function exampleConcept(){
+  /* This concept ID represents 'diabetes'. */
+  var conceptGraphId = "lxg:49711bf9b46f"; /* concept Id for hearth failure*/
+  var url = "https://api.lexigram.io/v1/lexigraph/concepts/"+ conceptGraphId;
+  var httpRequest = new XMLHttpRequest();
+  httpRequest.open("GET", url, true);
