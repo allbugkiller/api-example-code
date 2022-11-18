@@ -87,3 +87,14 @@ function exampleSearchConcepts(){
     if (httpRequest.readyState != 4 || httpRequest.status != 200) {
       return;
     }
+    var response = JSON.parse(httpRequest.responseText);
+
+    /* For loop that inspects the response printing to console the found search hits.
+       It prints the hits found Lexigraph concept ID, the type of concepts extracted (problem, drug, etc) */
+    for(var i = 0; i < response.conceptSearchHits.length; i++){
+      console.log(" id: "+response.conceptSearchHits[i].concept.id +
+                  " types: "+response.conceptSearchHits[i].concept.types) +
+                  " label: " + response.conceptSearchHits[i].concept.label;
+                  
+    }
+  };
