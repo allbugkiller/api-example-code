@@ -120,3 +120,13 @@ function exampleConcept(){
     }
     var response = JSON.parse(httpRequest.responseText);
     /*
+       It prints the concept ID, the type of concepts extracted (problem, drug, etc) */
+    console.log("id ",response.id + " label:"+ response.label + " types:" +response.types);
+  };
+  httpRequest.send();    
+};
+
+/* Ancestors of the concept Id are returned */
+function exampleConceptAncestors(){
+  var conceptGraphId = "lxg:49711bf9b46f"; /* concept Id for hearth failure*/
+  var url = "https://api.lexigram.io/v1/lexigraph/concepts/"+ conceptGraphId + "/ancestors";
