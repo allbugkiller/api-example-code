@@ -130,3 +130,10 @@ function exampleConcept(){
 function exampleConceptAncestors(){
   var conceptGraphId = "lxg:49711bf9b46f"; /* concept Id for hearth failure*/
   var url = "https://api.lexigram.io/v1/lexigraph/concepts/"+ conceptGraphId + "/ancestors";
+  var httpRequest = new XMLHttpRequest();
+  httpRequest.open("GET", url, true);
+  httpRequest.setRequestHeader("authorization", apiKey);
+
+  httpRequest.onreadystatechange = function() {
+    if (httpRequest.readyState != 4 || httpRequest.status != 200) {
+      return;
