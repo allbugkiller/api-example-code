@@ -137,3 +137,19 @@ function exampleConceptAncestors(){
   httpRequest.onreadystatechange = function() {
     if (httpRequest.readyState != 4 || httpRequest.status != 200) {
       return;
+    }
+    var response = JSON.parse(httpRequest.responseText);
+
+    /* For loop that inspects the response printing to console the found ancestors concepts.
+       It prints the Lexigraph concept ID, the type of concepts extracted (problem, drug, etc)
+     */
+    for(var i = 0; i <response.results.length; i++){
+      console.log("id" +response.results[0].id + response.results[0].types);
+    }
+    
+  };
+  httpRequest.send();    
+};
+
+
+/* Descendants of the concept Id are returned */
