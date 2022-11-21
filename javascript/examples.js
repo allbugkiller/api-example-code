@@ -165,3 +165,8 @@ function exampleConceptDescendants(){
       return;
     }
     var response = JSON.parse(httpRequest.responseText);
+
+    /* For loop that inspects the response printing to console the found descendants concepts.
+       It prints the Lexigraph concept ID, the type of concepts extracted (problem, drug, etc)
+     */
+    for(var i = 0; i <response.results.length; i++){
