@@ -153,3 +153,9 @@ function exampleConceptAncestors(){
 
 
 /* Descendants of the concept Id are returned */
+function exampleConceptDescendants(){
+  var conceptGraphId = "lxg:49711bf9b46f"; /* concept Id for hearth failure*/
+  var url = "https://api.lexigram.io/v1/lexigraph/concepts/"+ conceptGraphId + "/descendants";
+  var httpRequest = new XMLHttpRequest();
+  httpRequest.open("GET", url, true);
+  httpRequest.setRequestHeader("authorization", apiKey);
