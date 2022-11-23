@@ -170,3 +170,8 @@ function exampleConceptDescendants(){
        It prints the Lexigraph concept ID, the type of concepts extracted (problem, drug, etc)
      */
     for(var i = 0; i <response.results.length; i++){
+      console.log("id" +response.results[0].id + response.results[0].types);
+    }
+  };
+  httpRequest.send();    
+};
