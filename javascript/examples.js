@@ -175,3 +175,14 @@ function exampleConceptDescendants(){
   };
   httpRequest.send();    
 };
+
+
+/* The sequence of sample function calls for demo purposes */
+exampleEntityExtraction();
+exampleHighlightEntities();
+exampleConcept();
+exampleConceptAncestors();
+exampleConceptDescendants();
+exampleSearchConcepts();
+
+
