@@ -1,2 +1,2 @@
 """
-This file contains examples
+This file contains examples of how
