@@ -1,2 +1,2 @@
 """
-This file contains examples of how to interact with L
+This file contains examples of how to interact with Lexigram AP
