@@ -1,2 +1,2 @@
 """
-This file contains examples of how to interact with Lexigram AP
+This file contains examples of how to interact with Lexigram APIs in
