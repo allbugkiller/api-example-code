@@ -8,4 +8,5 @@ please visit http://docs.lexigram.io
 import requests
 import json
 
-# You can grab your API KEY from your user profile at https://app.lexigram.i
+# You can grab your API KEY from your user profile at https://app.lexigram.io
+apiKey 
