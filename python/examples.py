@@ -9,4 +9,6 @@ import requests
 import json
 
 # You can grab your API KEY from your user profile at https://app.lexigram.io
-apiKey = "Bearer " + "YOUR_COPY_
+apiKey = "Bearer " + "YOUR_COPY_HERE"
+
+
