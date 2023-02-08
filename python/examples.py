@@ -12,4 +12,5 @@ import json
 apiKey = "Bearer " + "YOUR_COPY_HERE"
 
 
-# Entity extraction from a note sampl
+# Entity extraction from a note sample.
+de
