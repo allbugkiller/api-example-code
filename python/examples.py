@@ -14,3 +14,4 @@ apiKey = "Bearer " + "YOUR_COPY_HERE"
 
 # Entity extraction from a note sample.
 def exampleEntityExtraction():
+    url =
