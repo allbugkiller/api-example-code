@@ -14,4 +14,4 @@ apiKey = "Bearer " + "YOUR_COPY_HERE"
 
 # Entity extraction from a note sample.
 def exampleEntityExtraction():
-    url = "https://api.lexigram.io/v1/extract/en
+    url = "https://api.lexigram.io/v1/extract/entitie
