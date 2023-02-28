@@ -16,4 +16,4 @@ apiKey = "Bearer " + "YOUR_COPY_HERE"
 def exampleEntityExtraction():
     url = "https://api.lexigram.io/v1/extract/entities"
     text = "The patient was given some hydrocodone for control of her pain." + \
-           "The patient suffers from bu
+           "The patient suffers from bulimia
