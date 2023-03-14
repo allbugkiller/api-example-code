@@ -19,4 +19,4 @@ def exampleEntityExtraction():
            "The patient suffers from bulimia and eating disorder, bipolar disorder," + \
            "and severe hypokalemia. She thinks her potassium might again be low."
 
-    r = requests.post(url, data=json
+    r = requests.post(url, data=json.dumps({
