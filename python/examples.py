@@ -20,4 +20,4 @@ def exampleEntityExtraction():
            "and severe hypokalemia. She thinks her potassium might again be low."
 
     r = requests.post(url, data=json.dumps({'text': text}),
-                      header
+                      headers={'Authorizatio
