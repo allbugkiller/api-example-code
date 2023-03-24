@@ -22,3 +22,5 @@ def exampleEntityExtraction():
     r = requests.post(url, data=json.dumps({'text': text}),
                       headers={'Authorization': apiKey, 'Content-Type': 'application/json'})
     response = json.loads(r.text)
+
+    '''For lo
