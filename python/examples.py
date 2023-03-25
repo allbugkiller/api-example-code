@@ -23,4 +23,4 @@ def exampleEntityExtraction():
                       headers={'Authorization': apiKey, 'Content-Type': 'application/json'})
     response = json.loads(r.text)
 
-    '''For loop that insp
+    '''For loop that inspects
