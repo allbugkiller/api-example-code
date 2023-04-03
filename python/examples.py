@@ -24,4 +24,4 @@ def exampleEntityExtraction():
     response = json.loads(r.text)
 
     '''For loop that inspects the response printing to console the extracted concepts.
-     It prints the Lexigraph concept ID, the type of concepts extracte
+     It prints the Lexigraph concept ID, the type of concepts extracted (problem, 
