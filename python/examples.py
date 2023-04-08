@@ -25,4 +25,4 @@ def exampleEntityExtraction():
 
     '''For loop that inspects the response printing to console the extracted concepts.
      It prints the Lexigraph concept ID, the type of concepts extracted (problem, drug, etc)
-     and the 
+     and the context (nega
