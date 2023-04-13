@@ -27,4 +27,5 @@ def exampleEntityExtraction():
      It prints the Lexigraph concept ID, the type of concepts extracted (problem, drug, etc)
      and the context (negation, speculation, ...) '''
 
-    for match in response['match
+    for match in response['matches']:
+   
