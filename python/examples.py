@@ -28,4 +28,4 @@ def exampleEntityExtraction():
      and the context (negation, speculation, ...) '''
 
     for match in response['matches']:
-        print 'id ' + match['id']
+        print 'id ' + match['id'] + " co
