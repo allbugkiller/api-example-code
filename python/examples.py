@@ -28,4 +28,7 @@ def exampleEntityExtraction():
      and the context (negation, speculation, ...) '''
 
     for match in response['matches']:
-        print 'id ' + match['id'] + " contexts", match['contexts'], "types", match['type
+        print 'id ' + match['id'] + " contexts", match['contexts'], "types", match['types']
+
+
+# Ent
