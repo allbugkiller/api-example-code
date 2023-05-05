@@ -31,4 +31,4 @@ def exampleEntityExtraction():
         print 'id ' + match['id'] + " contexts", match['contexts'], "types", match['types']
 
 
-# Entity highlight from 
+# Entity highlight from a note sa
