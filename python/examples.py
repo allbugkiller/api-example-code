@@ -32,4 +32,4 @@ def exampleEntityExtraction():
 
 
 # Entity highlight from a note sample.
-def exampleHighl
+def exampleHighlightEn
