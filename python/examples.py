@@ -33,4 +33,4 @@ def exampleEntityExtraction():
 
 # Entity highlight from a note sample.
 def exampleHighlightEntities():
-    u
+    url = "http
