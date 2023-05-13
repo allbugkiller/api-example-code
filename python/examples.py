@@ -33,4 +33,4 @@ def exampleEntityExtraction():
 
 # Entity highlight from a note sample.
 def exampleHighlightEntities():
-    url = "https://api.lexigram.io/v1/h
+    url = "https://api.lexigram.io/v1/highlight/
