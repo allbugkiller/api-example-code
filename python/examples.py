@@ -35,4 +35,4 @@ def exampleEntityExtraction():
 def exampleHighlightEntities():
     url = "https://api.lexigram.io/v1/highlight/entities"
     text = "The patient was given some hydrocodone for control of her pain." + \
-           "Th
+           "The patient suf
