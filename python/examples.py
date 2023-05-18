@@ -38,4 +38,4 @@ def exampleHighlightEntities():
            "The patient suffers from bulimia and eating disorder, bipolar disorder," + \
            "and severe hypokalemia. She thinks her potassium might again be low."
 
-  
+    r = reque
