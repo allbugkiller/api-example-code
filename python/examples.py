@@ -39,4 +39,6 @@ def exampleHighlightEntities():
            "and severe hypokalemia. She thinks her potassium might again be low."
 
     r = requests.post(url, data=json.dumps({'text': text}),
-                      headers={'Authorization': apiKey, 'Content-Type': 'applicati
+                      headers={'Authorization': apiKey, 'Content-Type': 'application/json'})
+
+    ''
