@@ -41,4 +41,5 @@ def exampleHighlightEntities():
     r = requests.post(url, data=json.dumps({'text': text}),
                       headers={'Authorization': apiKey, 'Content-Type': 'application/json'})
 
-    '''Returns the html formated text from a note sa
+    '''Returns the html formated text from a note sample '''
+   
