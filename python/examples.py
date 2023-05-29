@@ -42,4 +42,5 @@ def exampleHighlightEntities():
                       headers={'Authorization': apiKey, 'Content-Type': 'application/json'})
 
     '''Returns the html formated text from a note sample '''
-    print 'highlighted text', r.t
+    print 'highlighted text', r.text
+
