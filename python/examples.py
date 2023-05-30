@@ -46,4 +46,4 @@ def exampleHighlightEntities():
 
 
 # Keyword search of keyword diabetes
-def exampleSearchCo
+def exampleSearchConcepts(
