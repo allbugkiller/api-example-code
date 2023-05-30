@@ -45,4 +45,4 @@ def exampleHighlightEntities():
     print 'highlighted text', r.text
 
 
-# Keyword search of keyword d
+# Keyword search of keyword diabetes
