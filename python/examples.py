@@ -47,4 +47,4 @@ def exampleHighlightEntities():
 
 # Keyword search of keyword diabetes
 def exampleSearchConcepts():
-    keyw
+    keyword = "d
