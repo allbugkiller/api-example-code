@@ -45,4 +45,4 @@ def exampleHighlightEntities():
     print 'highlighted text', r.text
 
 
-# Keywo
+# Keyword sea
