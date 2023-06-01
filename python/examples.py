@@ -48,4 +48,4 @@ def exampleHighlightEntities():
 # Keyword search of keyword diabetes
 def exampleSearchConcepts():
     keyword = "diabetes"
-    url 
+    url = "http
