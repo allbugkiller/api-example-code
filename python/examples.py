@@ -48,4 +48,4 @@ def exampleHighlightEntities():
 # Keyword search of keyword diabetes
 def exampleSearchConcepts():
     keyword = "diabetes"
-    url = "https://api.lexigram.io/v1/lexigraph/search?q=" + 
+    url = "https://api.lexigram.io/v1/lexigraph/search?q=" + keywo
