@@ -50,4 +50,4 @@ def exampleSearchConcepts():
     keyword = "diabetes"
     url = "https://api.lexigram.io/v1/lexigraph/search?q=" + keyword
 
-    r = requests.get(url, he
+    r = requests.get(url, headers={'
