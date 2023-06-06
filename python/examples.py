@@ -51,3 +51,4 @@ def exampleSearchConcepts():
     url = "https://api.lexigram.io/v1/lexigraph/search?q=" + keyword
 
     r = requests.get(url, headers={'Authorization': apiKey})
+    res
