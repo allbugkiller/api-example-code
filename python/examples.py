@@ -53,4 +53,4 @@ def exampleSearchConcepts():
     r = requests.get(url, headers={'Authorization': apiKey})
     response = json.loads(r.text)
 
-    '''For loop that inspects the response p
+    '''For loop that inspects the response printing 
