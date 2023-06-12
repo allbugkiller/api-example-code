@@ -54,4 +54,4 @@ def exampleSearchConcepts():
     response = json.loads(r.text)
 
     '''For loop that inspects the response printing to console the found search hits.
-     It prints the Lexigraph c
+     It prints the Lexigraph concept ID, 
