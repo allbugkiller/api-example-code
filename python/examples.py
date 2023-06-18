@@ -56,4 +56,5 @@ def exampleSearchConcepts():
     '''For loop that inspects the response printing to console the found search hits.
      It prints the Lexigraph concept ID, the type of concepts extracted (problem, drug, etc)
      and the context (negation, speculation, ...) '''
-    for hit in response['conceptSearchHi
+    for hit in response['conceptSearchHits']:
+    
