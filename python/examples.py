@@ -57,4 +57,5 @@ def exampleSearchConcepts():
      It prints the Lexigraph concept ID, the type of concepts extracted (problem, drug, etc)
      and the context (negation, speculation, ...) '''
     for hit in response['conceptSearchHits']:
-        concept = hit['c
+        concept = hit['concept']
+   
