@@ -58,4 +58,4 @@ def exampleSearchConcepts():
      and the context (negation, speculation, ...) '''
     for hit in response['conceptSearchHits']:
         concept = hit['concept']
-        print 'id ' + concept['id'] + "types", concept
+        print 'id ' + concept['id'] + "types", concept['type
