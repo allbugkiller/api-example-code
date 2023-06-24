@@ -61,4 +61,4 @@ def exampleSearchConcepts():
         print 'id ' + concept['id'] + "types", concept['types']
 
 
-# Keyword sear
+# Keyword search of keywo
