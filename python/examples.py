@@ -61,4 +61,4 @@ def exampleSearchConcepts():
         print 'id ' + concept['id'] + "types", concept['types']
 
 
-# Keyword search of keywo
+# Keyword search of keyword diabete
