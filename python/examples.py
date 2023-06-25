@@ -62,4 +62,4 @@ def exampleSearchConcepts():
 
 
 # Keyword search of keyword diabetes
-def exa
+def exampleConce
