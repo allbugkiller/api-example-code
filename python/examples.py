@@ -63,4 +63,4 @@ def exampleSearchConcepts():
 
 # Keyword search of keyword diabetes
 def exampleConcept():
-    conceptGraphId 
+    conceptGraphId = "lxg:49711
