@@ -64,4 +64,6 @@ def exampleSearchConcepts():
 # Keyword search of keyword diabetes
 def exampleConcept():
     conceptGraphId = "lxg:49711bf9b46f"
-    url = "https://api.lexigram.io//v1/lexigraph/concepts/" + conce
+    url = "https://api.lexigram.io//v1/lexigraph/concepts/" + conceptGraphId
+
+ 
