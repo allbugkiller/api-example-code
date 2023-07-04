@@ -66,4 +66,4 @@ def exampleConcept():
     conceptGraphId = "lxg:49711bf9b46f"
     url = "https://api.lexigram.io//v1/lexigraph/concepts/" + conceptGraphId
 
-    r = requests.get(url, headers={'Authoriz
+    r = requests.get(url, headers={'Authorization': 
