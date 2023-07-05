@@ -69,4 +69,4 @@ def exampleConcept():
     r = requests.get(url, headers={'Authorization': apiKey})
     response = json.loads(r.text)
 
-    # It prints t
+    # It prints the concept
