@@ -67,4 +67,6 @@ def exampleConcept():
     url = "https://api.lexigram.io//v1/lexigraph/concepts/" + conceptGraphId
 
     r = requests.get(url, headers={'Authorization': apiKey})
-    response = json.loads(r.tex
+    response = json.loads(r.text)
+
+   
