@@ -72,3 +72,5 @@ def exampleConcept():
     # It prints the concept ID, the type of concepts extracted (problem, drug, etc)
     print 'id ' + response['id'] + "types", response['types']
 
+
+# Ances
