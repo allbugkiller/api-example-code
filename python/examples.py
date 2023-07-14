@@ -70,4 +70,5 @@ def exampleConcept():
     response = json.loads(r.text)
 
     # It prints the concept ID, the type of concepts extracted (problem, drug, etc)
-    print 'id ' + response['id'] + "types", respons
+    print 'id ' + response['id'] + "types", response['types']
+
