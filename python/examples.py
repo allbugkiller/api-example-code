@@ -73,4 +73,4 @@ def exampleConcept():
     print 'id ' + response['id'] + "types", response['types']
 
 
-# Ances
+# Ancestors of
