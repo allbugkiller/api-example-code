@@ -74,4 +74,4 @@ def exampleConcept():
 
 
 # Ancestors of the concept Id are returned
-def exampleConceptAn
+def exampleConceptAncestors():
