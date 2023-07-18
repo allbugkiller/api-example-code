@@ -75,4 +75,4 @@ def exampleConcept():
 
 # Ancestors of the concept Id are returned
 def exampleConceptAncestors():
-    concep
+    conceptGraphId 
