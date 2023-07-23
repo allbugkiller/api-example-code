@@ -78,4 +78,4 @@ def exampleConceptAncestors():
     conceptGraphId = "lxg:49711bf9b46f"  # hearth failure
     url = "https://api.lexigram.io/v1/lexigraph/concepts/" + conceptGraphId + "/ancestors"
 
-    r = requests.get(url, headers={'Authorization': 
+    r = requests.get(url, headers={'Authorization': apiKe
