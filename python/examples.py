@@ -82,4 +82,4 @@ def exampleConceptAncestors():
     response = json.loads(r.text)
 
     '''For loop that inspects the response printing to console the found search hits.
-     It prints the hits found Lexigraph concept
+     It prints the hits found Lexigraph concept ID, th
