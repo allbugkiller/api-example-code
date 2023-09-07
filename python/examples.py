@@ -85,3 +85,4 @@ def exampleConceptAncestors():
      It prints the hits found Lexigraph concept ID, the type of concepts extracted (problem, drug, etc)'''
 
     for match in response['results']:
+        p
