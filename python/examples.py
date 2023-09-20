@@ -88,4 +88,4 @@ def exampleConceptAncestors():
         print 'id ' + match['id'] + " types", match['types']
 
 
-# Descendants of the concept
+# Descendants of the concept Id are 
