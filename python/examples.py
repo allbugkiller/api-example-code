@@ -90,4 +90,5 @@ def exampleConceptAncestors():
 
 # Descendants of the concept Id are returned
 def exampleConceptDescendants():
-    conceptGraphId = "lxg:49711bf9b46f"  # hearth failur
+    conceptGraphId = "lxg:49711bf9b46f"  # hearth failure
+    url
