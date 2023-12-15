@@ -91,4 +91,4 @@ def exampleConceptAncestors():
 # Descendants of the concept Id are returned
 def exampleConceptDescendants():
     conceptGraphId = "lxg:49711bf9b46f"  # hearth failure
-    url = "https://api.lexigram.io/v1/lexigraph/concepts/" + conc
+    url = "https://api.lexigram.io/v1/lexigraph/concepts/" + conceptGraphId
