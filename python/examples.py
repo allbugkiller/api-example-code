@@ -94,3 +94,4 @@ def exampleConceptDescendants():
     url = "https://api.lexigram.io/v1/lexigraph/concepts/" + conceptGraphId + "/descendants"
 
     r = requests.get(url, headers={'Authorization': apiKey})
+    respons
