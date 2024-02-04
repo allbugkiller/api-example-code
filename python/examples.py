@@ -96,4 +96,4 @@ def exampleConceptDescendants():
     r = requests.get(url, headers={'Authorization': apiKey})
     response = json.loads(r.text)
 
-    '''For loop that inspects the response printing to console the fo
+    '''For loop that inspects the response printing to console the found sea
