@@ -97,4 +97,4 @@ def exampleConceptDescendants():
     response = json.loads(r.text)
 
     '''For loop that inspects the response printing to console the found search hits.
-         It prints th
+         It prints the hits fou
