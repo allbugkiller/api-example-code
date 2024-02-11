@@ -97,4 +97,4 @@ def exampleConceptDescendants():
     response = json.loads(r.text)
 
     '''For loop that inspects the response printing to console the found search hits.
-         It prints the hits found Lexigraph concept ID, the type of concep
+         It prints the hits found Lexigraph concept ID, the type of concepts extract
