@@ -98,4 +98,4 @@ def exampleConceptDescendants():
 
     '''For loop that inspects the response printing to console the found search hits.
          It prints the hits found Lexigraph concept ID, the type of concepts extracted (problem, drug, etc)'''
-    for match in res
+    for match in response['r
