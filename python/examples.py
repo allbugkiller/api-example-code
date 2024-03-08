@@ -103,4 +103,4 @@ def exampleConceptDescendants():
 
 
 # The sequence of sample function calls for demo purposes
-exam
+exampleEntityExtr
