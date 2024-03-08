@@ -102,4 +102,5 @@ def exampleConceptDescendants():
         print 'id ' + match['id'] + "types", match['types']
 
 
-# The sequence of sample function calls for demo purpose
+# The sequence of sample function calls for demo purposes
+exam
