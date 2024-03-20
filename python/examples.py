@@ -104,4 +104,5 @@ def exampleConceptDescendants():
 
 # The sequence of sample function calls for demo purposes
 exampleEntityExtraction()
-exampleHighlightEnti
+exampleHighlightEntities()
+e
