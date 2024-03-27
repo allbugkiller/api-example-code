@@ -105,4 +105,4 @@ def exampleConceptDescendants():
 # The sequence of sample function calls for demo purposes
 exampleEntityExtraction()
 exampleHighlightEntities()
-e
+exampleSea
