@@ -106,4 +106,5 @@ def exampleConceptDescendants():
 exampleEntityExtraction()
 exampleHighlightEntities()
 exampleSearchConcepts()
-exampleCon
+exampleConcept()
+exa
