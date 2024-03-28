@@ -107,4 +107,4 @@ exampleEntityExtraction()
 exampleHighlightEntities()
 exampleSearchConcepts()
 exampleConcept()
-exa
+exampleConce
