@@ -108,4 +108,4 @@ exampleHighlightEntities()
 exampleSearchConcepts()
 exampleConcept()
 exampleConceptAncestors()
-exampleC
+exampleConcep
