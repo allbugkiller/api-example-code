@@ -22,3 +22,13 @@ end
 def get(url, api_key, params={})
   http, url = create_http(url)
   url.query = URI.encode_www_form(params)
+
+  request = Net::HTTP::Get.new(url)
+  request["authorization"] = "Bearer #{api_key}"
+
+  response = http.request(request)
+  JSON.parse(response.read_body)
+end
+
+def post(url, api_key, params={})
+  http, url = create_http(url)
