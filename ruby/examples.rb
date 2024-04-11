@@ -47,3 +47,11 @@ def example_entity_extraction(api_key)
   text = "The patient was given some hydrocodone for control of her pain."+
          "The patient suffers from bulimia and eating disorder, bipolar disorder,"+
          "and severe hypokalemia. She thinks her potassium might again be low.";
+  params = {text: text}
+  url = "https://api.lexigram.io/v1/extract/entities"
+  parsed_json = post(url, api_key, params)
+
+  # For loop that inspects the response printing to console the extracted concepts.
+  # It prints the Lexigraph concept ID, the type of concepts extracted (problem, drug, etc)
+  # and the context (negation, speculation, ...)
+  puts "", "", "~~~~~~~~~~~~ example_entity_extraction ~~~~~~~~~~~~"
