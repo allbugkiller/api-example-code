@@ -32,3 +32,8 @@ end
 
 def post(url, api_key, params={})
   http, url = create_http(url)
+
+  request = Net::HTTP::Post.new(url)
+  request["authorization"] = "Bearer #{api_key}"
+  request["content-type"] = 'application/json'
+  request.body = params.to_json
