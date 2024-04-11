@@ -37,3 +37,13 @@ def post(url, api_key, params={})
   request["authorization"] = "Bearer #{api_key}"
   request["content-type"] = 'application/json'
   request.body = params.to_json
+
+  response = http.request(request)
+  JSON.parse(response.read_body)
+end
+
+# Entity extraction from a note sample.
+def example_entity_extraction(api_key)
+  text = "The patient was given some hydrocodone for control of her pain."+
+         "The patient suffers from bulimia and eating disorder, bipolar disorder,"+
+         "and severe hypokalemia. She thinks her potassium might again be low.";
