@@ -55,3 +55,7 @@ def example_entity_extraction(api_key)
   # It prints the Lexigraph concept ID, the type of concepts extracted (problem, drug, etc)
   # and the context (negation, speculation, ...)
   puts "", "", "~~~~~~~~~~~~ example_entity_extraction ~~~~~~~~~~~~"
+  parsed_json['matches'].each do |hit|
+    puts "#{hit['label']} (#{hit['id']} - #{hit['types'].join(", ")})"
+  end
+end
