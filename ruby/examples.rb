@@ -70,3 +70,15 @@ def example_highlight_entities(api_key)
   parsed_json = post(url, api_key, params)
 
   # Returns the html formated text from a note sample
+  puts "", "", "~~~~~~~~~~~~ example_highlight_entities ~~~~~~~~~~~~"
+  puts parsed_json["text"]
+end
+
+# Keyword search of keyword diabetes
+# Search API. /lexigraph/search
+def example_search_concepts(api_key)
+  url = "https://api.lexigram.io/v1/lexigraph/search"
+  params = {limit: 2, q: "aspirin"}
+  parsed_json = get(url, api_key, params)
+
+  # For loop that inspects the response printing to console the found search hits.
