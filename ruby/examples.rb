@@ -82,3 +82,11 @@ def example_search_concepts(api_key)
   parsed_json = get(url, api_key, params)
 
   # For loop that inspects the response printing to console the found search hits.
+  # It prints the Lexigraph concept ID, the type of concepts extracted (problem, drug, etc)
+  # and the context (negation, speculation, ...)
+  puts "", "", "~~~~~~~~~~~~ example_search_concepts ~~~~~~~~~~~~"
+  parsed_json['conceptSearchHits'].each do |hit|
+    concept = hit['concept']
+    puts "#{concept['label']} (#{concept['id']} - #{concept['types'].join(", ")})"
+  end
+end
