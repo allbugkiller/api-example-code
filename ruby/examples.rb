@@ -90,3 +90,13 @@ def example_search_concepts(api_key)
     puts "#{concept['label']} (#{concept['id']} - #{concept['types'].join(", ")})"
   end
 end
+
+# Keyword search of keyword diabetes
+def example_concept(api_key)
+  url = "https://api.lexigram.io/v1/lexigraph/concepts/lxg:69abfe85ef40"
+  parsed_json = get(url, api_key)
+
+  # Prints the concept ID, the type of concepts extracted (problem, drug, etc)
+  puts "", "", "~~~~~~~~~~~~ example_concept ~~~~~~~~~~~~"
+  puts "#{parsed_json['label']} (#{parsed_json['id']} - #{parsed_json['types'].join(", ")})"
+end
