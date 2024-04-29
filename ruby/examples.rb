@@ -115,3 +115,6 @@ def example_concept_ancestors(api_key)
 end
 
 # Descendants of the concept Id are returned
+def example_concept_descendants(api_key)
+  url = "https://api.lexigram.io/v1/lexigraph/concepts/lxg:69abfe85ef40/descendants"
+  parsed_json = get(url, api_key)
