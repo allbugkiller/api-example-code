@@ -100,3 +100,18 @@ def example_concept(api_key)
   puts "", "", "~~~~~~~~~~~~ example_concept ~~~~~~~~~~~~"
   puts "#{parsed_json['label']} (#{parsed_json['id']} - #{parsed_json['types'].join(", ")})"
 end
+
+# Ancestors of the concept Id are returned
+def example_concept_ancestors(api_key)
+  url = "https://api.lexigram.io/v1/lexigraph/concepts/lxg:69abfe85ef40/ancestors"
+  parsed_json = get(url, api_key)
+
+  # For loop that inspects the response printing to console the found search hits.
+  # It prints the hits found Lexigraph concept ID, the type of concepts extracted (problem, drug, etc)
+  puts "", "", "~~~~~~~~~~~~ example_concept_ancestors ~~~~~~~~~~~~"
+  parsed_json['results'].each do |hit|
+    puts "#{hit['label']} (#{hit['id']} - #{hit['types'].join(", ")})"
+  end
+end
+
+# Descendants of the concept Id are returned
