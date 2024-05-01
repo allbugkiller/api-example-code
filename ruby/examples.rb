@@ -118,3 +118,11 @@ end
 def example_concept_descendants(api_key)
   url = "https://api.lexigram.io/v1/lexigraph/concepts/lxg:69abfe85ef40/descendants"
   parsed_json = get(url, api_key)
+
+  # For loop that inspects the response printing to console the found search hits.
+  # It prints the hits found Lexigraph concept ID, the type of concepts extracted (problem, drug, etc)
+  puts "", "", "~~~~~~~~~~~~ example_concept_descendants ~~~~~~~~~~~~"
+  parsed_json['results'].each do |hit|
+    puts "#{hit['label']} (#{hit['id']} - #{hit['types'].join(", ")})"
+  end
+end
