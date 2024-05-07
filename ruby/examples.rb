@@ -126,3 +126,8 @@ def example_concept_descendants(api_key)
     puts "#{hit['label']} (#{hit['id']} - #{hit['types'].join(", ")})"
   end
 end
+
+
+# The sequence of sample function calls for demo purposes
+example_entity_extraction(api_key)
+example_highlight_entities(api_key)
