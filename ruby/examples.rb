@@ -131,3 +131,7 @@ end
 # The sequence of sample function calls for demo purposes
 example_entity_extraction(api_key)
 example_highlight_entities(api_key)
+example_search_concepts(api_key)
+example_concept(api_key)
+example_concept_ancestors(api_key)
+example_concept_descendants(api_key)
